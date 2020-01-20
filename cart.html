@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Cart</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- G FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:200,400,600&display=swap" rel="stylesheet">
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="container cart-header">
+        <div class="row mt-5 m text-center">
+            <div class="col">
+                <h3>Your Cart</h3>
+                <p>Pastikan barang anda terbayar lunas</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- BREADCRUMBS -->
+    <div class="container mt-3">
+        <nav>
+            <ol class="breadcrumb bg-transparent pl-0 cart-breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cart Checkout</li>
+            </ol>
+        </nav>
+    </div>
+    <!--AKHIR BREADCRUMBS -->
+
+    <!-- Checkout -->
+        <section style="margin-bottom: 50px;" class="checkout">
+            <div class="container">
+                <div style="margin-bottom: 100px;" class="row justify-content-between">
+                    <div class="col-lg-6">
+                        <h4 class="mb-4">Your Items</h4>
+                        <div class="row align-items-center mb-4">
+                            <div class="col-2">
+                                <img src="assets/img/cart/items1.png" class="rounded" alt="">
+                            </div>
+                            <div class="col-4">
+                                <h5 class="m-0">Bag</h5>
+                                <p class="m-0" style="color: #b7b7b7;">IDR 280.000.000</p>
+                            </div>
+                            <div class="col-4 stok-wrapper">
+                                <a href="#">
+                                    <img id="minus" src="assets/img/svg/minus.svg" alt="">
+                                </a>
+                                <span id="stok" class="mx-2">20</span>
+                                <a href="#">
+                                    <img id="plus" src="assets/img/svg/plus.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-2 text-right">
+                                <a href="#">
+                                    <img src="assets/img/svg/close.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row align-items-center mb-4">
+                            <div class="col-2">
+                                <img src="assets/img/cart/items2.png" class="rounded" alt="">
+                            </div>
+                            <div class="col-4">
+                                <h5 class="m-0">Dress</h5>
+                                <p class="m-0" style="color: #b7b7b7;">IDR 280.000.000</p>
+                            </div>
+                            <div class="col-4 stok-wrapper">
+                                <a href="#">
+                                    <img id="minus" src="assets/img/svg/minus.svg" alt="">
+                                </a>
+                                <span id="stok" class="mx-2">20</span>
+                                <a href="#">
+                                    <img id="plus" src="assets/img/svg/plus.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-2 text-right">
+                                <a href="#">
+                                    <img src="assets/img/svg/close.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row align-items-center mb-4">
+                            <div class="col-2">
+                                <img src="assets/img/cart/items3.png" class="rounded" alt="">
+                            </div>
+                            <div class="col-4">
+                                <h5 class="m-0">Hat</h5>
+                                <p class="m-0" style="color: #b7b7b7;">IDR 280.000.000</p>
+                            </div>
+                            <div class="col-4 stok-wrapper">
+                                <a href="#">
+                                    <img id="minus" src="assets/img/svg/minus.svg" alt="">
+                                </a>
+                                <span id="stok" class="mx-2">20</span>
+                                <a href="#">
+                                    <img id="plus" src="assets/img/svg/plus.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-2 text-right">
+                                <a href="#">
+                                    <img src="assets/img/svg/close.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <h4 class="mb-3" style="margin-top: 100px ;" >Your Address</h4>
+
+                        <form>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="Alamat lengkap">
+                            </div>
+                            <div class="form-group">
+                                <label for="address2">Address II</label>
+                                <input type="text" class="form-control" id="address" placeholder="Alamat lengkap">
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <select class="custom-select">
+                                    <option selected>Select City</option>
+                                    <option value="1">Purbalingga</option>
+                                    <option value="2">Purwokerto</option>
+                                    <option value="3">Cilacap</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <select class="custom-select">
+                                    <option selected>Select Country</option>
+                                    <option value="1">Indonesia</option>
+                                    <option value="2">Singapore</option>
+                                    <option value="3">South Korea</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="col-lg-5">
+                        <div class="card card-rounded-0 checkout-detail">
+                            <div class="card-body">
+                                <h5 class="card-title">Informasi Biaya</h5>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <h6 class="m-0">Santa Hat</h6>
+                                        <small style="color: #b7b7b7;">2 Items</small>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <h6 class="m-0 align-self-center text-success">IDR 600.000.000</h6>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <h6 class="m-0">Dress</h6>
+                                        <small style="color: #b7b7b7;">2 Items</small>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <h6 class="m-0 align-self-center text-success">IDR 600.000.000</h6>
+                                    </div>
+                                </div>
+
+
+                                <hr>
+
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <h6 class="m-0">Courier</h6>
+                                        <small style="color: #b7b7b7;">JNT Express</small>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <h6 class="m-0 align-self-center text-success">IDR 200.000</h6>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <h6 class="m-0">Tax</h6>
+                                        <small style="color: #b7b7b7;">Negara 20%</small>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <h6 class="m-0 align-self-center text-success">IDR 1.200.000</h6>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <h6 class="m-0">Christmas Promo</h6>
+                                        <small style="color: #b7b7b7;">10% Off</small>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <h6 class="m-0 align-self-center text-danger">- IDR 1.000.000</h6>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <h6 class="m-0">Total Harga</h6>
+                                        <small style="color: #b7b7b7;">10% Off</small>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <h6 class="m-0 align-self-center text-primary">- IDR 1.522.000.000</h6>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col">
+                                <button type="button" class="btn btn-block" style="color: #adadad; background: #eaeaea;" >Cancel</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" style="background: #299ADE;" class="btn btn-block text-white">Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    <!-- Akhir Checkout -->
+
+   
+
+
+    <!-- FOOTER -->
+    <footer class="border-top p-5">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col">
+                         <a href="">
+                             <img src="./assets/img/svg/tuwaisu.svg" alt="">
+                         </a>
+                    </div>
+                    <div class="col-4 text-right">
+                        <a href="https://www.instagram.com/rz.dfrz/" target="blank" >
+                            <img src="assets/img/social/1.png" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/rz.dfrz/" target="blank" >
+                            <img src="assets/img/social/2.png" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/rz.dfrz/" target="blank" >
+                            <img src="assets/img/social/3.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3 justify-content-between" style="align-items: center;">
+                    <div class="col-5">
+                        <p>All Rights reserved by Hefa Store Copyright 2020</p>
+                    </div>
+                    <div class="col-6 p-0">
+                        <nav class="nav justify-content-end text-uppercase">
+                            <a class="nav-link active" href="#">Jobs</a>
+                            <a class="nav-link" href="#">Developer</a>
+                            <a class="nav-link" href="#">Terms</a>
+                            <a class="nav-link" href="#">About</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+
+        <script>
+            const btnMinus = document.getElementById("minus");
+            btnMinus.addEventListener('click',function(){
+                let stok = document.getElementById('stok').innerHTML;
+                stok--;
+                document.getElementById('stok').innerHTML = stok;
+            });
+
+            const btnPlus = document.getElementById("plus");
+            btnPlus.addEventListener('click',function(){
+                let stok = document.getElementById('stok').innerHTML;
+                stok++;
+                document.getElementById('stok').innerHTML = stok;
+            });
+        </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+</body>
+</html>

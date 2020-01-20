@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Single Product</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- G FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:200,400,600&display=swap" rel="stylesheet">
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/svg/tuwaisu.svg">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-uppercase mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Category</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Designer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                </ul>
+                <a href="cart.html" class="nav-link text-white p-0"> <img src="assets/img/svg/cart.svg"</i>My Cart(<span>12</span>) </a>
+            </div>           
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- BREADCRUMBS -->
+    <div class="container mt-5" id="breadcrumb">
+        <nav>
+            <ol class="breadcrumb bg-transparent pl-0">
+            <li class="breadcrumb-item"><a href="#">Category</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Single Product</li>
+            </ol>
+        </nav>
+    </div>
+    <!--AKHIR BREADCRUMBS -->
+
+    <!-- SINGLE PRODUCT -->
+
+    <section class="single-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <figure class="figure">
+                        <div class="img-hover-zoom">
+                            <img id="main-img" src="assets/img/single/1.png" class="figure-img img-fluid rounded" alt="...">
+                        </div>
+                        <figcaption class="figure-caption product-thumbnail-container d-flex justify-content-between">
+                            <a href="#breadcrumb" class="img-hover-zoom-point">
+                                <img width="80" height="80" id="first-img" src="assets/img/single/1.png" alt="">
+                            </a>
+                            <a href="#breadcrumb" class="img-hover-zoom-point">
+                                <img width="80" height="80" id="second-img"  src="assets/img/single/2.png" alt="">
+                            </a>
+                            <a href="#breadcrumb" class="img-hover-zoom-point">
+                                <img width="80" height="80" id="third-img"  src="assets/img/single/3.png" alt="">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=5BbFig72Sfo" class="img-hover-video" target="blank">
+                                <img src="assets/img/single/4.svg" alt="">
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4" id="desc">
+                    <h3>Dress: Sana Christmas</h3>
+                    <p class="text-muted idr">IDR 290.000.000</p>
+
+                    <div class="stok-wrapper">
+                        <a>
+                            <img id="minus" src="assets/img/svg/minus.svg" alt="">
+                        </a>
+                        <span id="stok" class="mx-2">20</span>
+                        <a>
+                            <img id="plus" src="assets/img/svg/plus.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="btn-product">
+                        <a href="cart.html" class="btn btn-primary text-white">Add to Cart</a>
+                        <a href="#" class="btn" style="background: #EAEAEF; color: #ADADAD;">Add to Wishlist</a>
+                    </div>                     
+
+                    <div class="designed-by">
+                        <h5>Designed by</h5>
+                        <div class="row" style="align-items: center;">
+                            <div class="col-2 mr-2">
+                                <img src="assets/img/single/designed.png" alt="">
+                            </div>
+                            <div class="col">
+                                <h4>Pablo Hasyakyla</h4>
+                                <p>14.2K <span>Followers</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SINGLE PRODUCT AKHIR -->
+
+    <!-- Product Desc dan Review -->
+    <section class="product-description p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Product Description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Reviews (20)</a>
+                        </li>
+                        </ul>
+                        <div class="tab-content p-3" id="myTabContent">
+                            <div class="tab-pane fade show active product-review" id="description" role="tabpanel" aria-labelledby="description-tab">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum dolore culpa modi maiores deleniti doloremque officia iusto, quos nesciunt nemo, maxime dolorum est vitae distinctio placeat itaque fuga deserunt labore accusamus nam, tempora aut! Quam, ad aliquid. Provident hic cum excepturi impedit aut, alias voluptas odit doloremque, voluptatem nulla reiciendis!</p>
+                                <br>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam minima, omnis ducimus in, possimus earum mollitia vitae error iusto reprehenderit nobis voluptatibus ipsum harum ea eaque facere itaque non nesciunt totam culpa distinctio dolores nihil explicabo quo. Soluta mollitia libero quis commodi nemo impedit adipisci? Quam, suscipit? Veniam, illum sit!</p>
+                            </div>
+                            <div class="tab-pane fade product-review" id="review" role="tabpanel" aria-labelledby="review-tab">
+                                <div class="row pb-3" style="align-items: center;">
+                                    <div class="col-1 d-none d-md-block mr-2">
+                                        <img src="assets/img/single/preview/1.png" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <h5>Joe Mackenzie</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptates!</p>
+                                    </div>
+                                </div>
+                                <div class="row pb-3" style="align-items: center;">
+                                    <div class="col-1 d-none d-md-block mr-2">
+                                        <img src="assets/img/single/preview/1.png" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <h5>Briant</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptates!</p>
+                                    </div>
+                                </div>
+                                <div class="row pb-3" style="align-items: center;">
+                                    <div class="col-1 d-none d-md-block mr-2">
+                                        <img src="assets/img/single/preview/1.png" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <h5>Joe Mackenzie</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptates!</p>
+                                    </div>
+                                </div>
+                                <div class="row pb-3" style="align-items: center;">
+                                    <div class="col-1 d-none d-md-block mr-2">
+                                        <img src="assets/img/single/preview/1.png" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <h5>Joe Mackenzie</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptates!</p>
+                                    </div>
+                                </div>
+                                <div class="row pb-3" style="align-items: center;">
+                                    <div class="col-1 d-none d-md-block mr-2">
+                                        <img src="assets/img/single/preview/1.png" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <h5>Joe Mackenzie</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptates!</p>
+                                    </div>
+                                </div>
+                                <div class="row pb-3" style="align-items: center;">
+                                    <div class="col-1 d-none d-md-block mr-2">
+                                        <img src="assets/img/single/preview/1.png" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <h5>Joe Mackenzie</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptates!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Akhir Product Desc dan Review -->
+
+    <!-- SIMILAR  -->
+        <section class="similar-product">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col">
+                        <h3>Similar Product</h3>
+                        <p>Pakaian pelengkap product diatas</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <figure class="figure">
+                            <a href="#figure" target="blank">
+                                <div class="img-hover-zoom-rotate">
+                                    <img src="assets/img/single/similar/1.png" class="figure-img img-fluid rounded">
+                                </div>
+                            </a>
+                            <figcaption class="figure-caption">
+                                <div class="row mt-2">
+                                    <div class="col">
+                                        <h4>Sana Angel</h4>
+                                        <p>Match 20%</p>
+                                    </div>
+                                    <div class="col text-right align-items-center d-flex justify-content-end">
+                                        <p style="font-size: 18px;">IDR. 209.000</p>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <figure class="figure" id="figure">
+                            <a href="#figure" target="blank">
+                                <div class="img-hover-zoom-rotate">
+                                    <img src="assets/img/single/similar/2.png" class="figure-img img-fluid rounded class="img-hover-zoom-rotate"">
+                                </div>
+                            </a>
+                            <figcaption class="figure-caption">
+                                <div class="row mt-2">
+                                    <div class="col">
+                                        <h4>Mina Angel</h4>
+                                        <p>Match 80%</p>
+                                    </div>
+                                    <div class="col text-right align-items-center d-flex justify-content-end">
+                                        <p style="font-size: 18px;">IDR. 209.000</p>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <figure class="figure" id="figure">
+                            <a href="#figure" target="blank" class="img-hover-zoom-rotate">
+                                <div class="img-hover-zoom-rotate">
+                                    <img src="assets/img/single/similar/3.png" class="figure-img img-fluid rounded">
+                                </div>
+                            </a>
+                            <figcaption class="figure-caption">
+                                <div class="row mt-2">
+                                    <div class="col">
+                                        <h4>Tzuyu Angel</h4>
+                                        <p>Match 20%</p>
+                                    </div>
+                                    <div class="col text-right align-items-center d-flex justify-content-end">
+                                        <p style="font-size: 18px;">IDR. 209.000</p>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- AKHIR SIMILAR -->
+
+
+
+    <!-- FOOTER -->
+    <footer class="border-top p-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col">
+                     <a href="">
+                         <img src="./assets/img/svg/tuwaisu.svg" alt="">
+                     </a>
+                </div>
+                <div class="col-4 text-right">
+                    <a href="https://www.instagram.com/rz.dfrz/" target="blank" >
+                        <img src="assets/img/social/1.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/rz.dfrz/" target="blank" >
+                        <img src="assets/img/social/2.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/rz.dfrz/" target="blank" >
+                        <img src="assets/img/social/3.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-3 justify-content-between" style="align-items: center;">
+                <div class="col-5">
+                    <p>All Rights reserved by Hefa Store Copyright 2020</p>
+                </div>
+                <div class="col-6 p-0">
+                    <nav class="nav justify-content-end text-uppercase">
+                        <a class="nav-link active" href="#">Jobs</a>
+                        <a class="nav-link" href="#">Developer</a>
+                        <a class="nav-link" href="#">Terms</a>
+                        <a class="nav-link" href="#">About</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <script>
+
+    const track1 = 'f';
+    const firstImage = document.getElementById("first-img");
+    firstImage.addEventListener('click',function(){
+        const mainImage = document.getElementById("main-img");
+        console.log(mainImage);
+        if(track1 === 'f'){
+            mainImage.src = 'assets/img/single/1.png';
+        }
+    });
+    
+    const track2 = 's';
+    const secondImage = document.getElementById("second-img");
+    secondImage.addEventListener('click',function(){
+        const mainImage = document.getElementById("main-img");
+        console.log(mainImage);
+        if(track2 === 's'){
+            mainImage.src = 'assets/img/single/2.png';
+        }
+    });
+
+    const track3 = 't';
+    const thirdImage = document.getElementById("third-img");
+    thirdImage.addEventListener('click',function(){
+        const mainImage = document.getElementById("main-img");
+        console.log(mainImage);
+        if(track3 === 't'){
+            mainImage.src = 'assets/img/single/3.png';
+        }
+    });
+
+    const btnMinus = document.getElementById("minus");
+    btnMinus.addEventListener('click',function(){
+        let stok = document.getElementById('stok').innerHTML;
+        stok--;
+        document.getElementById('stok').innerHTML = stok;
+    });
+
+    const btnPlus = document.getElementById("plus");
+    btnPlus.addEventListener('click',function(){
+        let stok = document.getElementById('stok').innerHTML;
+        stok++;
+        document.getElementById('stok').innerHTML = stok;
+    });
+
+
+    
+
+        
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    
+</body>
+</html>
